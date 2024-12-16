@@ -1,12 +1,11 @@
 {
-    "name": "brackets/craftable-pro",
+    "name": "jaydeepukani/craftable-pro",
     "description": "New generation of administration",
     "keywords": [
-        "BRACKETS-by-TRIAD",
         "laravel",
         "craftable-pro"
     ],
-    "homepage": "https://github.com/brackets-by-triad/craftable-pro",
+    "homepage": "https://github.com/jaydeepukani/craftable-pro",
     "license": "proprietary",
     "authors": [
         {
