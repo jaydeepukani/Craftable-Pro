@@ -9,11 +9,18 @@
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "lib": ["esnext", "dom"],
+        "lib": [
+            "esnext",
+            "dom"
+        ],
         "baseUrl": "./",
         "paths": {
-            "@/*": ["resources/js/*"],
-            "craftable-pro/*": ["vendor/brackets/craftable-pro/resources/js/*"]
+            "@/*": [
+                "resources/js/*"
+            ],
+            "craftable-pro/*": [
+                "vendor/jaydeepukani/craftable-pro/resources/js/*"
+            ]
         }
     },
     "include": [

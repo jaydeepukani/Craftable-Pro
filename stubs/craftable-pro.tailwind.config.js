@@ -6,7 +6,7 @@ module.exports = {
   content: [
     "./resources/views/craftable-pro.blade.php",
     "./resources/js/craftable-pro/**/*.vue",
-    "./vendor/brackets/craftable-pro/resources/js/**/*.vue"
+    "./vendor/jaydeepukani/craftable-pro/resources/js/**/*.vue"
   ],
 
   theme: {

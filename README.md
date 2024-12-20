@@ -8,6 +8,7 @@
 ## Installation
 
 After obtaining a valid [Craftable PRO license](https://craftablepro.pro/) you need to add our private repository to your project:
+
 ```bash
 composer config repositories.craftable-pro vcs git@github.com:BRACKETS-by-TRIAD/craftable-pro.git
 ```
@@ -15,7 +16,7 @@ composer config repositories.craftable-pro vcs git@github.com:BRACKETS-by-TRIAD/
 You can install the package via composer:
 
 ```bash
-composer require brackets/craftable-pro
+composer require jaydeepukani/craftable-pro
 ```
 
 Then you need to install the package (it will publish resources, migrations, configs, edit some configuration, ...) with:
@@ -25,6 +26,7 @@ php artisan craftable-pro:install
 ```
 
 and finally you run:
+
 ```bash
 npm install
 npm run craftable-pro:dev
@@ -33,6 +35,7 @@ npm run craftable-pro:dev
 ## Development
 
 To develop this package, we recommend you to start on a fresh Laravel instance using Sail:
+
 ```bash
 curl -s "https://laravel.build/craftable-pro-dev" | bash
 
@@ -46,7 +49,7 @@ and then run these commands:
 ```bash
 git clone git@github.com:BRACKETS-by-TRIAD/craftable-pro.git
 composer config repositories.craftable-pro path craftable-pro
-composer require brackets/craftable-pro
+composer require jaydeepukani/craftable-pro
 ./vendor/bin/sail artisan craftable-pro:install
 ./vendor/bin/sail artisan vendor:publish --tag=craftable-pro-seeders
 ./vendor/bin/sail artisan db:seed --class=DummyDataSeeder

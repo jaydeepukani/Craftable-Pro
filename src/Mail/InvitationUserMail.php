@@ -43,7 +43,7 @@ class InvitationUserMail extends Mailable
     public function content()
     {
         return new Content(
-            markdown: 'brackets/craftable-pro/email_templates::invite_user',
+            markdown: 'jaydeepukani/craftable-pro/email_templates::invite_user',
             with: [
                 'userFullName' => $this->data['userFullName'],
                 'email' => $this->data['email'],

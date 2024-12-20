@@ -83,9 +83,9 @@ class CraftableProServiceProvider extends PackageServiceProvider
             ->hasCommand(CrudGeneratorCommand::class)
             ->hasCommand(TestDbConnectionCommand::class);
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views/generator/', 'brackets/craftable-pro');
-        $this->loadViewsFrom(__DIR__ . '/../resources/views/email_templates/', 'brackets/craftable-pro/email_templates');
-        $this->loadViewsFrom(__DIR__ . '/../resources/views/auth/', 'brackets/craftable-pro/auth');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/generator/', 'jaydeepukani/craftable-pro');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/email_templates/', 'jaydeepukani/craftable-pro/email_templates');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/auth/', 'jaydeepukani/craftable-pro/auth');
     }
 
     public function bootingPackage()

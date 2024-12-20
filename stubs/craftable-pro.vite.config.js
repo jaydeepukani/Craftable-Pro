@@ -1,8 +1,8 @@
-import { defineConfig, splitVendorChunkPlugin } from "vite";
-import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
+import laravel from "laravel-vite-plugin";
 import { resolve } from "path";
 import tailwindcss from "tailwindcss";
+import { defineConfig, splitVendorChunkPlugin } from "vite";
 
 export default defineConfig({
   plugins: [
@@ -37,7 +37,7 @@ export default defineConfig({
       "@": resolve(__dirname, "./resources/js"),
       "craftable-pro": resolve(
         __dirname,
-        "./vendor/brackets/craftable-pro/resources/js"
+        "./vendor/jaydeepukani/craftable-pro/resources/js"
       ),
       ziggy: resolve(__dirname, "./vendor/tightenco/ziggy"),
     },

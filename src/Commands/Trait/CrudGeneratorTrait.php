@@ -232,7 +232,7 @@ trait CrudGeneratorTrait
 
                 $replace = $this->modelBuildReplacements();
 
-                $template = view('brackets/craftable-pro::model', $replace)->render();
+                $template = view('jaydeepukani/craftable-pro::model', $replace)->render();
 
                 $this->files->put($modelPath, $template);
             });
@@ -257,7 +257,7 @@ trait CrudGeneratorTrait
 
             $replace = $this->baseBuildReplacements();
 
-            $template = view("brackets/craftable-pro::controller", $replace)->render();
+            $template = view("jaydeepukani/craftable-pro::controller", $replace)->render();
 
             $this->files->put($controllerPath, $template);
         });
@@ -284,7 +284,7 @@ trait CrudGeneratorTrait
                 permissionName: $permissionName ?? $name
             );
 
-            $this->files->put($requestPath, view('brackets/craftable-pro::request_rule', $replace)->render());
+            $this->files->put($requestPath, view('jaydeepukani/craftable-pro::request_rule', $replace)->render());
         });
 
         return $this;
@@ -305,7 +305,7 @@ trait CrudGeneratorTrait
         $this->components->task("Routes", function () {
             $replace = $this->routesBuildReplacements();
 
-            $content = view('brackets/craftable-pro::route', $replace)->render();
+            $content = view('jaydeepukani/craftable-pro::route', $replace)->render();
 
             $this->appendIfNotAlreadyAppended(
                 base_path('routes/web.php'),
@@ -392,7 +392,7 @@ trait CrudGeneratorTrait
 
             $replace = $this->buildPermissionMigrationReplace();
 
-            $template = view("brackets/craftable-pro::permission_migration", $replace)->render();
+            $template = view("jaydeepukani/craftable-pro::permission_migration", $replace)->render();
 
             $this->files->put($migrationPath, $template);
         });
@@ -407,7 +407,7 @@ trait CrudGeneratorTrait
                 $exportPath = $this->getExportPath(Str::plural($this->className) . "Export");
                 $replace = $this->buildExportReplace();
 
-                $template = view("brackets/craftable-pro::export", $replace)->render();
+                $template = view("jaydeepukani/craftable-pro::export", $replace)->render();
 
                 $this->files->put($exportPath, $template);
             });
