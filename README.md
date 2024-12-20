@@ -1,17 +1,11 @@
 # New generation of administration
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/brackets-by-triad/craftable-pro.svg?style=flat-square)](https://packagist.org/packages/brackets-by-triad/craftable-pro)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/brackets-by-triad/craftable-pro/run-tests?label=tests)](https://github.com/brackets-by-triad/craftable-pro/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/brackets-by-triad/craftable-pro/Check%20&%20fix%20styling?label=code%20style)](https://github.com/brackets-by-triad/craftable-pro/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/brackets-by-triad/craftable-pro.svg?style=flat-square)](https://packagist.org/packages/brackets-by-triad/craftable-pro)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/jaydeepukani/craftable-pro.svg?style=flat-square)](https://packagist.org/packages/jaydeepukani/craftable-pro)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/jaydeepukani/craftable-pro/run-tests?label=tests)](https://github.com/jaydeepukani/craftable-pro/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/jaydeepukani/craftable-pro/Check%20&%20fix%20styling?label=code%20style)](https://github.com/jaydeepukani/craftable-pro/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/jaydeepukani/craftable-pro.svg?style=flat-square)](https://packagist.org/packages/jaydeepukani/craftable-pro)
 
 ## Installation
-
-After obtaining a valid [Craftable PRO license](https://craftablepro.pro/) you need to add our private repository to your project:
-
-```bash
-composer config repositories.craftable-pro vcs git@github.com:BRACKETS-by-TRIAD/craftable-pro.git
-```
 
 You can install the package via composer:
 
@@ -47,8 +41,6 @@ cd craftable-pro-dev
 and then run these commands:
 
 ```bash
-git clone git@github.com:BRACKETS-by-TRIAD/craftable-pro.git
-composer config repositories.craftable-pro path craftable-pro
 composer require jaydeepukani/craftable-pro
 ./vendor/bin/sail artisan craftable-pro:install
 ./vendor/bin/sail artisan vendor:publish --tag=craftable-pro-seeders
@@ -62,3 +54,4 @@ composer require jaydeepukani/craftable-pro
 ```bash
 composer test
 ```
+
